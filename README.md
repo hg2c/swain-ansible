@@ -1,6 +1,6 @@
 **「适合 ansible 中级用户阅读」**
 
-![ansible](../assets/img/ansible.png)
+![ansible](https://mmbiz.qpic.cn/mmbiz_png/s0ClhYiavKgPerEBchLj4w0Zj5puRGEB3iaxhtd0V35KpoXQMrDRlAHpicibApicJGsR8VvSPb1nnia8OxPw4HcGE3EA/640?wx_fmt=png&wxfrom=5&wx_lazy=1)
 
 作为自动化执行、配置管理工具，Ansible 常被拿来和 puppet 比较。Ansible 具备简单，免 agent 的优点，是实现“基础设施即代码”的理想选择。通过使用 CMDB 生成 Host Inventory, 加上一个 Role 生成器自动生成 Playbook。可以进化到类似 Ansible Tower 的自动化平台。
 
