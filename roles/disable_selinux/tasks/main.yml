@@ -1,0 +1,4 @@
+---
+- selinux:
+    state: disabled
+  become: true

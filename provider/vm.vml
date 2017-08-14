@@ -1,0 +1,13 @@
+---
+- hosts: all
+  gather_facts: yes
+  roles:
+    - set_hostname
+    - set_yum_mirror
+    - tuning_selinux
+
+- hosts: docker
+  gather_facts: yes
+  roles:
+    - install_docker
+    - set_thin_pool

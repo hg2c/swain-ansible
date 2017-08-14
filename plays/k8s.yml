@@ -1,0 +1,4 @@
+---
+- include: ../books/etcd.yml
+- include: ../books/k8s_master.yml
+- include: ../books/k8s_minion.yml

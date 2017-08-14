@@ -1,0 +1,16 @@
+############
+# provider
+############
+ansible_ssh_common_args: '-F ./environments/dev/ssh_config'
+
+############
+# etcd
+############
+# curl https://discovery.etcd.io/new\?size\=3
+etcd_discovery_url: https://discovery.etcd.io/a44bc0e3219b3647d11fb8a3xxxxxxxx
+
+############
+# docker with thin pool
+############
+lvm_disk: /dev/vda
+lvm_root_size: 1G

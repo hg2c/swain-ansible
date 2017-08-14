@@ -1,0 +1,27 @@
+Host a.dev.cn
+     Hostname 192.168.5.12
+     User work
+
+Host b.dev.cn
+     Hostname 192.168.5.27
+     User work
+
+Host c.dev.cn
+     Hostname 192.168.5.28
+     User work
+
+Host d.dev.cn
+     Hostname 192.168.5.29
+     User work
+
+Host e.dev.cn
+     Hostname 192.168.5.30
+     User work
+
+Host f.dev.cn
+     Hostname 192.168.5.31
+     User work
+
+Host g.dev.cn
+     Hostname 192.168.4.110
+     User work

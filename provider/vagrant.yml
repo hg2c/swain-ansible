@@ -1,0 +1,8 @@
+---
+- debug: msg="[VAR_DUMP] provider=>{{ provider }}"
+
+- name: "VAGRANT_CWD=./environments/vagrant vagrant up"
+  local_action: shell VAGRANT_CWD=./environments/vagrant vagrant up
+
+- name: "VAGRANT_CWD=./environments/vagrant vagrant ssh-config > ./run/vagrant-ssh-config"
+  local_action: shell VAGRANT_CWD=./environments/vagrant vagrant ssh-config > ./run/vagrant-ssh-config

@@ -1,0 +1,32 @@
+---
+- name: Bring up docker containers
+  hosts: all
+  gather_facts: no
+  vars:
+    inventory:
+      - name: k8s-master
+        image: "chrismeyers/centos7"
+      - name: k8s-minion
+        image: "chrismeyers/centos7"
+
+  roles:
+    - { role: provision_docker,
+        provision_docker_inventory: "{{ inventory }}",
+        tags: provision_docker }
+
+  tasks:
+    - name: Group primary
+      add_host:
+        hostname: "{{ item }}"
+        groups: kubernetes-master
+      with_items:
+        - k8s-master
+      tags: provision_docker
+
+    - name: Group secondaries
+      add_host:
+        hostname: "{{ item }}"
+        groups: kubernetes-minion
+      with_items:
+        - k8s-minion
+      tags: provision_docker

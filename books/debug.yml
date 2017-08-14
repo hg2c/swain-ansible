@@ -1,0 +1,6 @@
+---
+- include: ../facts/common.yml
+
+- hosts: all
+  roles:
+    - debug

@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+CWD=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
+
+source $CWD/.functions.sh
+
+get_env ${PLAY_DIR} ${CLI_ENV}
+get_playbook ${PLAY_DIR} ${CLI_CMD}
