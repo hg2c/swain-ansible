@@ -1,0 +1,8 @@
+- hosts: sites
+  tasks:
+    - name: do something in the shell
+      shell: ls
+      register: result
+
+    - debug:
+        var: result
